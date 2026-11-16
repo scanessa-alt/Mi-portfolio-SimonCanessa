@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #090d16;
+    color: #f8fafc;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    padding-top: 70px;
+}
+
+/* 1. NAVBAR */
+.custom-navbar {
+    background: rgba(9, 13, 22, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    color: #ffffff !important;
+}
+
+.brand-accent {
+    color: #38bdf8;
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+.custom-toggler {
+    border: 1px solid rgba(56, 189, 248, 0.4) !important;
+}
+
+/* 2. ENCABEZADO (HERO) */
+.hero {
+    padding: 85px 20px 75px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 65%);
+}
+
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 22px;
+}
+
+.avatar-svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.35);
+    display: block;
+}
+
+.hero-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-top: 6px;
+}
+
+.btn-primary-custom {
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+    color: #090d16;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.45);
+    color: #090d16;
+}
+
+/* SECCIONES Y TÍTULOS */
+.section {
+    padding: 85px 20px;
+}
+
+.section-alt {
+    background-color: #0d121f;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #38bdf8;
+    margin-bottom: 6px;
+}
+
+.custom-hr {
+    border: none;
+    height: 3px;
+    width: 75px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    border-radius: 4px;
+    opacity: 1;
+    margin: 14px 0 22px;
+}
+
+.text-secondary-custom {
+    color: #94a3b8;
+}
+
+/* 3. PORTFOLIO (Padding de sección + Imágenes estilizadas) */
+.portfolio-section {
+    padding: 90px 20px;
+}
+
+.portfolio-item {
+    background: #131928;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 16px;
+    height: 100%;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 189, 248, 0.45);
+}
+
+.portfolio-img-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.35s ease;
+}
+
+.portfolio-img-link:hover .portfolio-img {
+    transform: scale(1.04);
+}
+
+.portfolio-caption {
+    padding: 0 4px 4px;
+}
+
+.portfolio-caption h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.portfolio-caption p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 0;
+}
+
+/* 4. ACERCA DE MÍ */
+.lead {
+    color: #cbd5e1;
+    font-size: 1.12rem;
+    line-height: 1.75;
+}
+
+.skills-box {
+    background: #131928;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 26px;
+    border-radius: 20px;
+}
+
+.skill-pill {
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* 5. CONTACTO */
+.contact-form {
+    background: #131928;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 32px;
+    border-radius: 20px;
+}
+
+.custom-input {
+    background-color: #090d16 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.custom-input:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15) !important;
+}
+
+.custom-input::placeholder {
+    color: #64748b;
+}
+
+/* 6. FOOTER */
+.footer {
+    background: #060910;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 45px 0 25px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.footer-brand {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.footer-brand span {
+    color: #38bdf8;
+}
+
+.footer-detail {
+    font-size: 0.88rem;
+}
+
+.social-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    color: #38bdf8;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #131928;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.social-links a:hover {
+    background-color: #38bdf8;
+    color: #090d16;
+    transform: translateY(-3px);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom {
+    font-size: 0.82rem;
+    color: #64748b;
+}
